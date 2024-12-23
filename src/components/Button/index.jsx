@@ -5,17 +5,18 @@ export class Button extends Component
 {
     render ()
     {
-        const {text,onClick,disabled} = this.props;
+        const {text,onClick,disabled = false} = this.props;
         return (
-            <button 
+            <button
             disabled={disabled}
             className ="button"
             onClick={onClick}>
                 {text}
             </button>
-            
+
         )
     }
+
 }
 
-    
+
